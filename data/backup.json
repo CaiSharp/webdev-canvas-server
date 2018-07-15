@@ -1,0 +1,74 @@
+[
+    {
+        "id": 0,
+        "name": "Bauhaus",
+        "floors": [
+            {
+                "id": 0,
+                "name": "Keller"
+            },
+            {
+                "id": 1,
+                "name": "Erdgeschoss"
+            },
+            {
+                "id": 2,
+                "name": "1.Geschoss"
+            }
+        ],
+        "rooms": [
+            {
+                "id": 0,
+                "floorId": 1,
+                "name": "Bad",
+                "doors": 1,
+                "windows": 1,
+                "area": 7
+            },
+            {
+                "id": 1,
+                "floorId": 1,
+                "name": "Wohnzimmer",
+                "doors": 3,
+                "windows": 2,
+                "area": 25
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "name": "Nicht Bauhaus",
+        "floors": [
+            {
+                "id": 0,
+                "name": "Keller"
+            },
+            {
+                "id": 1,
+                "name": "Erdgeschoss"
+            },
+            {
+                "id": 2,
+                "name": "1.Geschoss"
+            }
+        ],
+        "rooms": [
+            {
+                "id": 0,
+                "floorId": 1,
+                "name": "Bad",
+                "doors": 1,
+                "windows": 1,
+                "area": 7
+            },
+            {
+                "id": 1,
+                "floorId": 1,
+                "name": "Wohnzimmer",
+                "doors": 3,
+                "windows": 2,
+                "area": 25
+            }
+        ]
+    }
+]
