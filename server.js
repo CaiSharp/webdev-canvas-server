@@ -28,10 +28,10 @@ expressSanitized.sanitizeParams(app, ["id"]);
 
 //ROUTES
 app.get("/buildings", getAllDataController);
-app.get("/buildings/:id", getOneDataController);
-app.post("/", postDataController);
-app.post("/delete", deleteDataController);
-app.post("/update", updateDataController);
+app.get("/buildings/:id", getOneDataController); //requires param id
+app.post("/", postDataController); //requires object
+app.post("/delete", deleteDataController); //requires object
+app.post("/update", updateDataController); // requires object
 
 //START
 app.listen(port || process.env.PORT, () =>
