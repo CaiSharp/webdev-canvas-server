@@ -7,6 +7,7 @@ const postDataController = (request, response) => {
 
     const dataToAdd = request.body;
 
+    //GET DATA FROM JSON DATABASE
     fs.readFile(directory, "utf8", (err, data)=>{
         if (err) {return response.send('Error');}
 
@@ -14,6 +15,7 @@ const postDataController = (request, response) => {
 
         if(dbData.find(el=>el.id=== dataToAdd.id)){
             console.log('Entry already exists');
+            return response.send('Entry already exists');
         }
         else{
             dbData.push(dataToAdd);
@@ -21,10 +23,10 @@ const postDataController = (request, response) => {
             fs.writeFile(directory, JSON.stringify(dbData), (err) => {
                 if (err) throw err;
                 console.log('Entry has been saved!');
+                return response.send('Entry has been saved!');
             });
         }
     });
-    return response.send();
 };
 
 module.exports = postDataController;
